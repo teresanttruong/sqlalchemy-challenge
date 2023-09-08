@@ -11,26 +11,26 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
 4. Link Python to the database by creating a SQLAlchemy session.
 5. Perform a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
 
-  Precipitation Analysis
-    1. Find the most recent date in the dataset.
-    2. Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
-    3. Select only the "date" and "prcp" values.
-    4. Load the query results into a Pandas DataFrame. Explicitly set the column names.
-    5. Sort the DataFrame values by "date".
-    6. Plot the results by using the DataFrame plot method, as the following image shows:
+Precipitation Analysis
+1. Find the most recent date in the dataset.
+2. Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
+3. Select only the "date" and "prcp" values.
+4. Load the query results into a Pandas DataFrame. Explicitly set the column names.
+5. Sort the DataFrame values by "date".
+6. Plot the results by using the DataFrame plot method, as the following image shows:
         <img width="468" alt="precipitation" src="https://github.com/teresanttruong/sqlalchemy-challenge/assets/130198820/34a6dd23-f3db-4e0b-86d0-e6490e5d71c4">
-    7. Use Pandas to print the summary statistics for the precipitation data.
+7. Use Pandas to print the summary statistics for the precipitation data.
 
-  Station Analysis
-    1. Design a query to calculate the total number of stations in the dataset.
-    2. Design a query to find the most-active stations (that is, the stations that have the most rows). To do so, complete the following steps:
-          - List the stations and observation counts in descending order.
-          - Answer the following question: which station id has the greatest number of observations?
-    3. Design a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query.
-    4. Design a query to get the previous 12 months of temperature observation (TOBS) data. To do so, complete the following steps:
-          - Filter by the station that has the greatest number of observations.
-          - Query the previous 12 months of TOBS data for that station.
-          - Plot the results as a histogram with bins=12, as the following image shows:
+Station Analysis
+1. Design a query to calculate the total number of stations in the dataset.
+2. Design a query to find the most-active stations (that is, the stations that have the most rows). To do so, complete the following steps:
+   - List the stations and observation counts in descending order.
+   - Answer the following question: which station id has the greatest number of observations?
+3. Design a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query.
+4. Design a query to get the previous 12 months of temperature observation (TOBS) data. To do so, complete the following steps:
+   - Filter by the station that has the greatest number of observations.
+   - Query the previous 12 months of TOBS data for that station.
+   - Plot the results as a histogram with bins=12, as the following image shows:
           <img width="478" alt="station-histogram" src="https://github.com/teresanttruong/sqlalchemy-challenge/assets/130198820/9248b775-0900-4fa4-a2a0-7c4e346ce4e9">
 
 ## Part 2: Design Your Climate App
